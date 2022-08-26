@@ -8,7 +8,8 @@ export const GiftExpertApp = () => {
     
 
     const onAddCategory = (category) => {
-
+        
+        
         setCategories( list => [...list, category])
         
     }

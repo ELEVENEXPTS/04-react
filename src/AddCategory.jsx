@@ -11,7 +11,6 @@ export const AddCategory = ({onAddCategory}) => {
     }
 
     const onSubmit = (evt) => {
-
         evt.preventDefault();
         onAddCategory( inputValue )
         setInputValue('')
@@ -23,7 +22,7 @@ export const AddCategory = ({onAddCategory}) => {
 
         <form onSubmit={(event) => onSubmit(event)}>
 
-            <input type="text" placeholder="buscar" value={inputValue} onChange={(event => onInputChange(event))}/>
+            <input type="text" placeholder="buscar" value={inputValue} onChange={(event)=> onInputChange(event)}/>
 
 
         </form>
